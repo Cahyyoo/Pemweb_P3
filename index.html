@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Div Example with Style</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        height: 100vh;
+      }
+
+      .container-navbar {
+        width: 100%;
+      }
+      .nav-ul {
+        background-color: red;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        font-size: 18px;
+        color: aliceblue;
+        height: 80px;
+        position: fixed;
+        width: 100%;
+      }
+
+      .container-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: blue; */
+        height: 100%;
+      }
+
+      .container-a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .container-footer {
+        background-color: red;
+        color: aliceblue;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-nav">
+      <!-- Start Header -->
+      <ul class="nav-ul">
+        <li class="nav-li">
+          <a clas="nav-a" href="#">Home</a>
+        </li>
+        <li class="nav-li">
+          <a clas="nav-a" href="about.html">About me</a>
+        </li>
+        <li class="nav-li">
+          <a clas="nav-a" href="contact.html">Contact Me</a>
+        </li>
+      </ul>
+      <!-- End Header -->
+    </div>
+    <!-- Start Content -->
+    <div class="container-content">
+      <a class="container-a" href="https://www.instagram.com">
+        <img class="content-img" src="img/gambar.png" alt="gambar" />
+        <p>Lorem ipsum dolor sit</p>
+      </a>
+    </div>
+    <!-- End Content -->
+    <!-- Start Footer -->
+    <div class="container-footer">
+      <h2>Lorem ipsum dolor sit amet.</h2>
+    </div>
+    <!-- End Footer -->
+  </body>
+</html>
